@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  margin: 0px;
+  color: #020413 !important;
+}
+.main-text {
+  font-size: 10vmin;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.sub-text {
+  font-size: 8vmin;
+  padding: 10px;
+}
+.txt {
+  color: #dc2f02;
+}
+.sub-txt {
+  font-size: 22px;
+}
+
+.hero {
+  background-image: url(./Images/bg.png);
+}
+.content {
+  padding: 20px;
+  height: 100vh;
+}
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 30px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: flex;
+  align-items: center;
+  float: right;
+  font-size: 2vmin;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #dc2f02;
+}
+
+.nav > .nav-links > a:hover {
+  color: #dc2f02;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  /* .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  } */
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #020413;
+    text-align: center;
+    font-size: 7vmin;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    z-index: 2;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+.content,
+.content-two,
+.content-three {
+  text-align: center;
+}
+.content-two {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+ul {
+  list-style-type: none;
+}
+.content-two li {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2vmin;
+  text-align: start !important;
+}
+.content-three {
+  background-image: url(./Images/gb.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 4vmin;
+  color: #020413;
+}
+.li {
+  font-size: 20px;
+  padding: 2vmin;
+}
+.title3 {
+  font-size: 8vmin;
+}
+
+/*  sdnklvnsdlvdksa*/
+:root {
+  --cardMargin: 16px;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: var(--cardWidth);
+  margin: var(--cardMargin);
+  background: transparent;
+  box-sizing: border-box;
+  padding: 10px;
+  color: #020413;
+  background: rgba(255, 255, 255, 0.29);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+.footer {
+  color: #dc2f02;
+  background-color: #020413;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer h3 {
+  margin-top: 20px;
+  text-align: center;
+}
+.footer h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2.5vmin;
+  color: #dc2f02;
+}
+a {
+  text-decoration: none;
+  color: #dc2f02 !important;
+}
+img {
+  border-radius: 35% 65% 38% 62% / 81% 0% 100% 19%;
+  height: 50vmin;
+  width: 50vmin;
+}
+.contact-section,
+.form-section,
+.login-section,
+.calc-section {
+  color: #dc2f02;
+  height: 100vh;
+  text-align: center;
+}
+.contact-section input,
+.form-section input,
+.login-section input,
+select {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #020413;
+  outline: none;
+  width: 50vmin;
+  padding: 10px;
+  margin-bottom: 20px;
+  caret-color: #dc2f02;
+  font-family: cursive;
+  border: 1px solid #dc2f02;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+}
+input::placeholder {
+  color: #020413;
+}
+textarea::placeholder {
+  color: #020413;
+}
+.contact-section textarea,
+.form-section textarea {
+  caret-color: #dc2f02;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #dc2f02;
+  outline: none;
+  font-family: cursive;
+  margin-left: 40px;
+  width: 70vmin;
+  height: 30vmin;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+}
+.btn {
+  padding: 5px;
+  color: #dc2f02;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #dc2f02;
+  text-transform: uppercase;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: cursive;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #dc2f02;
+  color: #020413;
+}
+
+/* Calculator styles*/
+#calc-container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.calculator {
+  padding: 20px;
+  width: 20rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 20px;
+}
+
+.calculator input {
+  outline: none;
+  width: 70%;
+  border: 1px solid #dc2f02;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.number,
+.evaluate {
+  padding: 15px;
+  color: #dc2f02;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #dc2f02;
+  font-family: cursive;
+  font-weight: bold;
+}
+.number:hover,
+.evaluate:hover {
+  background-color: #dc2f02;
+  color: #020413;
+}
+.rrr {
+  padding: 10px;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+}
